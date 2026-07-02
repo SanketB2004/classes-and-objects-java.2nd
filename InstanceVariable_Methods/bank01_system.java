@@ -1,31 +1,28 @@
+package InstanceVariable_Methods;
+
 /**
  * bank01_system
  */
 public class bank01_system {
 
-    //Instance Variable 
-    String acountHolder;
-    
-    double balance;
 
-    // instance methods 
+     public String accountHolder; // instance variable 
+    public double balance;
 
-    void deposit(int amount){
-      
-        balance   += amount ;
-
+    public void deposit(double amount) {  // instance methods
+        balance = balance + amount;
     }
 
-    void withdraw( int amount){
-
-        balance -= amount ;
-
+    public void withdraw(double amount) {
+        balance = balance - amount;
     }
 
-    int checkbalnce(int amount){
+    public void checkBalance() {
+        System.out.println(balance);
+    }
 
-     int a = amount ; 
-
-     return a;
+    public void accountDetails() {
+        System.out.println(accountHolder);
+        System.out.println(balance);
     }
 }

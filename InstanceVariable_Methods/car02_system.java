@@ -1,3 +1,5 @@
+
+package InstanceVariable_Methods;
 /**
  * car02_system
  */
@@ -22,8 +24,16 @@ public class car02_system {
 
     public void drive(){  // instance Methods
 
-        System.out.println("Car is drawing");
-        currentFuelInLiters--;
+        if (currentFuelInLiters <= 0){
+            System.out.println("Car is out of Fuel");
+        }else if(currentFuelInLiters<= 5){
+            System.out.println("Car is Reserved Mood");
+        }else{
+         System.out.println("Car is drawing");
+         currentFuelInLiters--;
+        }
+
+        
     }
 
     public void addFuel(float fuel){  // instance Methods
