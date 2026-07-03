@@ -3,7 +3,11 @@ package This_Static_Keyword;
 
 public class car {
 
-
+    static int minAgeForDrawing = 18; // use for static keyword
+int age;
+    public boolean  isAllowedTodrive(){
+        return this.age >= minAgeForDrawing; // non static method madhe apan static method use karu shakato pn static madhe non static method use nay karu shakat 
+    }
     public static void main(String[] args) {
 
         car02_Sy mycar = new car02_Sy(); // object declering  , mycar is reference variable
@@ -38,7 +42,7 @@ public class car {
    
 System.out.println(Swift.getcurrentfuleLevel());
 
-
+System.out.println(minAgeForDrawing);// use for static keyword
 
 
     
