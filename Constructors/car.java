@@ -1,0 +1,75 @@
+package Constructors;
+
+
+
+
+public class car {
+
+    static int minAgeForDrawing = 18; // use for static keyword
+int age;
+    public boolean  isAllowedTodrive(){
+        return this.age >= minAgeForDrawing; // non static method madhe apan static method use karu shakato pn static madhe non static method use nay karu shakat 
+    }
+    public static void main(String[] args) {
+
+        car02_Sy mycar = new car02_Sy(); // object declering  , mycar is reference variable
+
+        // Using Objects 
+
+        // mycar.drive();
+
+        // System.out.println(mycar.getcurrentfuleLevel());
+
+        // mycar.addFuel(100);
+
+        // System.out.println(mycar.getcurrentfuleLevel());
+
+        //  mycar.drive();
+        //  System.out.println(mycar.getcurrentfuleLevel());
+
+   car02_Sy Swift = new car02_Sy("Green");
+     
+     
+//    Swift.start();
+//    Swift.addFuel(6);
+
+//    Swift.drive();
+
+//     //car02_Sy  started = Swift.start(); // this  keyword used to this step run 
+    
+    Swift.start().drive();//method chaining useful this keyword 
+
+
+//    Swift.addFuel(500);// useful for name conflict 
+   
+// System.out.println(Swift.getcurrentfuleLevel());
+
+// System.out.println(minAgeForDrawing);// use for static keyword
+
+
+System.out.println(Swift.color);// use constructor values by defult 
+
+System.out.println(Swift.maxSpeedChange(500));
+
+System.out.println(Swift.maxSpeeed); // use constructor but change maxspeed use to method asa 
+// pn karu shakato by defult constructor value change sathi
+
+
+System.out.println(Swift.interiorColor); // used to peramrtized Contructor 
+    
+car02_Sy Defender = new car02_Sy();
+
+System.out.println(Defender.interiorColor); // use constructor chaing 
+
+System.out.println(Defender.currentFuelInLiters); // jr color ny ghetala suggest tr fuel 50 L 
+
+System.out.println(Swift.currentFuelInLiters);//jr color suggest kela tr fuel 5L
+
+
+
+
+
+}
+    
+}
+
