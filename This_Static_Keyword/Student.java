@@ -18,7 +18,7 @@ public class Student {
     public static void main(String[] args) {
         
         Student s1 = new Student("Sanket");
-Student s2 = new Student("Rahul");
+Student s2 = new Student("Atharv");
 
 s1.display();
 s2.display();
