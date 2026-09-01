@@ -34,7 +34,7 @@ public class car02_Sy {
     int noOFseets; // instance Variable 
 
      car02_Sy() {
-        this("Premium Choice In Company"); // jer object make karatana ni color nay dhila ter ha color choise hoil yala constructor chaing asa mhantata tya sathi same don constructor create kele jatat kinvha multiple constructoe use kela jato
+        this("Premium Choice In Company"); // jer object make karatana ni `or nay dhila ter ha color choise hoil yala constructor chaing asa mhantata tya sathi same don constructor create kele jatat kinvha multiple constructoe use kela jato
      // by defult contructor ahe ha yaat customer change karu shakato
     //pn by defult tyne object banavala ki ya value tyala janar 
 

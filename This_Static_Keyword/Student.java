@@ -7,20 +7,20 @@ public class Student {
     String name;
     static String college = "COEP";
 
-    Student(String name){
+    Student(String name) {
         this.name = name;
     }
 
-    void display(){
+    void display() {
         System.out.println(name + " " + college);
     }
 
     public static void main(String[] args) {
-        
-        Student s1 = new Student("Sanket");
-Student s2 = new Student("Atharv");
 
-s1.display();
-s2.display();
+        Student s1 = new Student("Sanket");
+        Student s2 = new Student("Atharv");
+
+        s1.display();
+        s2.display();
     }
 }
