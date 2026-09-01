@@ -10,7 +10,7 @@ public class bank01_system {
     public double balance;
 
     public void deposit(double amount) {  // instance methods
-        balance = balance + amount;
+        this.balance + amount;
     }
 
     public void withdraw(double amount) {
